@@ -54,6 +54,23 @@ class ProductTest < ActiveSupport::TestCase
                           price:        1,
                           image_url:    'fred.gif')
     assert product.invalid?
-    assert_equal [I18n.translate('errors.messages.taken')], product.errors[:title]
+    assert_equal I18n.translate('errors.messages.taken'), product.errors[:title].join('; ')
+  end
+
+  test 'product is not valid with a title less than 10 characters' do
+    product = Product.new(title:        'small txt',
+                          description:  'yyyy',
+                          price:        1,
+                          image_url:    'fred.gif')
+    assert product.invalid?
+    assert_equal I18n.translate('errors.messages.too_short', count: 10), product.errors[:title].join('; ')
+  end
+
+  test 'product is valid with a title bigger or equal to 10 characters' do
+    product = Product.new(title:        'bigger title text',
+                          description:  'yyyy',
+                          price:        1,
+                          image_url:    'fred.gif')
+    assert product.valid?
   end
 end
