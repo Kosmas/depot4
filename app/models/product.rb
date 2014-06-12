@@ -9,4 +9,7 @@ class Product < ActiveRecord::Base
   }
   validates :title, length: { minimum: 10 }
 
+  def self.latest
+    Product.order(:updated_at).last
+  end
 end
