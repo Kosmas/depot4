@@ -8,7 +8,7 @@ class OrdersControllerTest < ActionController::TestCase
   test "requires item in cart" do
     get :new
     assert_redirected_to store_path
-    assert_equal_flash[:notice] = 'Your cart is emtpy'
+    assert_equal flash[:notice], 'Your cart is empty'
   end
 
   test "should get index" do
@@ -19,7 +19,7 @@ class OrdersControllerTest < ActionController::TestCase
 
   test "should get new" do
     item = LineItem.new
-    item.build.cart
+    item.build_cart
     item.product = products(:ruby)
     item.save!
     session[:cart_id] = item.cart.id
