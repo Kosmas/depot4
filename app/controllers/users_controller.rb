@@ -58,7 +58,7 @@ class UsersController < ApplicationController
       @user.destroy
       flash[:notice] = "User #{@user.name} deleted"
     rescue StandardError => e
-      flash[:notice = e.message
+      flash[:notice] = e.message
     end
     respond_to do |format|
       format.html { redirect_to users_url }
