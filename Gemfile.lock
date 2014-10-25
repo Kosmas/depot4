@@ -28,7 +28,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    bcrypt (3.1.7)
+    bcrypt (3.1.9)
     builder (3.2.2)
     capistrano (2.15.5)
       highline
@@ -48,7 +48,7 @@ GEM
     highline (1.6.21)
     hike (1.2.3)
     i18n (0.6.11)
-    jbuilder (2.2.3)
+    jbuilder (2.2.4)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.2)
@@ -127,9 +127,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt (~> 3.1.7)
+  bcrypt (~> 3.1.9)
   coffee-rails (~> 4.1.0)
-  jbuilder (~> 2.2.3)
+  jbuilder (~> 2.2.4)
   jquery-rails (~> 3.1.2)
   jquery-ui-rails (~> 5.0.2)
   rails (~> 4.1.6)
