@@ -90,7 +90,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
-    rvm-capistrano (1.5.4)
+    rvm-capistrano (1.5.5)
       capistrano (~> 2.15.4)
     sass (3.2.19)
     sass-rails (4.0.4)
@@ -133,7 +133,7 @@ DEPENDENCIES
   jquery-rails (~> 3.1.2)
   jquery-ui-rails (~> 5.0.2)
   rails (~> 4.1.7)
-  rvm-capistrano (~> 1.5.4)
+  rvm-capistrano (~> 1.5.5)
   sass-rails (~> 4.0.4)
   sdoc (~> 0.4.1)
   spring
