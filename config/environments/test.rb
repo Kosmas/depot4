@@ -36,4 +36,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Added after upgrade to rails 4.2.0
+  config.active_support.test_order = :random
 end
