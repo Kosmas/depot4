@@ -41,4 +41,4 @@ gem 'rvm-capistrano', '~> 1.5.6', group: :development
 # gem 'debugger', group: [:development, :test]
 
 # Security update for nokogiri
-gem 'nokogiri', '~> 1.6.7.2'
+gem 'nokogiri', '~> 1.6.8'
