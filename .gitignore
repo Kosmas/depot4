@@ -17,3 +17,7 @@
 
 # Ignore config/secrets.yml
 /config/secrets.yml
+
+# Add rvm files
+.ruby-version
+.ruby-gemset
